@@ -1,0 +1,30 @@
+-- Data type conversion
+
+-- Using CAST (expression AS data type)
+
+-- String to numbers
+SELECT CAST('1' AS INTEGER);
+SELECT CAST('0.113' AS DOUBLE PRECISION);
+
+-- Number to string
+SELECT CAST(1 AS TEXT);
+
+-- String to Boolean
+SELECT 
+CAST('Y' AS BOOLEAN),
+CAST('YES' AS BOOLEAN),
+CAST('TRUE' AS BOOLEAN),
+CAST('NO' AS BOOLEAN),
+CAST('FALSE' AS BOOLEAN),
+CAST('N' AS BOOLEAN);
+
+-- String to DAte
+SELECT CAST('2020-01-10' AS DATE),
+CAST('2020-01-10' AS TIMESTAMP),
+CAST('2020-01-10' AS TIMESTAMPTZ);
+
+-- String to Interval
+SELECT CAST('10 minutes' AS INTERVAL),
+CAST('10 HOURS' AS INTERVAL),
+CAST('10 YEARS' AS INTERVAL),
+CAST('10 months' AS INTERVAL);
